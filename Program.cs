@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
@@ -152,7 +152,8 @@ class Program
 
                     // Путь к новому файлу будет всегда с именем "Assembly-CSharp.dll"
                     // Используем название окна (windowTitle) как часть имени файла
-                    string targetPath = Path.Combine(targetDirectory, $"{windowTitle}_Assembly-CSharp.dll");
+                    string targetPath = Path.Combine(targetDirectory, "Assembly-CSharp.dll");
+
 
                     if (File.Exists(targetPath))
                     {
